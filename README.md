@@ -4,6 +4,12 @@
 [![npm downloads](https://img.shields.io/npm/dm/react-scrollbar.svg?style=flat-square)](https://www.npmjs.org/package/react-scrollbar)
 # react-scrollbar
 
+> NOTE: this repo is ported over from http://souhe.github.io/reactScrollbar because it no longer appears to be 
+> being maintained. It fixes two issues (both in PRs):
+> - drag bug: https://github.com/souhe/reactScrollbar/pull/81
+> - propTypes fix for newer React versions: https://github.com/souhe/reactScrollbar/pull/86
+
+
 Simple ScrollArea component built for [React](http://facebook.github.io/react/).
 
 [Demo](http://souhe.github.io/reactScrollbar)
