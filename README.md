@@ -220,7 +220,7 @@ class Content extends React.Component {
 }
 
 Content.contextTypes = {
-    scrollArea: React.PropTypes.object
+    scrollArea: PropTypes.object
 };
 ```
 

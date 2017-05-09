@@ -58,7 +58,7 @@ gulp.task("connect", function(){
         root: 'dist',
         livereload: true,
         port: 8003
-      });
+    });
 });
 
 gulp.task('less-examples', function(){

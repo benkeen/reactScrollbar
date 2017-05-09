@@ -1,6 +1,6 @@
 {
   "name": "react-scrollbar-patch",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "A patch of souhe/reactScrollbar that fixes a significant bug preventing range sliders working (issue #42).",
   "main": "./dist/scrollArea.js",
   "scripts": {
