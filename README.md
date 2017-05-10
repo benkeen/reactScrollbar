@@ -65,7 +65,7 @@ For **React 0.13** you need to wrap `<ScrollArea>` child into a function.
 ```
 
 #### Version without boundled css styles ####
-If you prefer including scrollbar without css styles boundled inline to js file it's possible to import package without them. It's useful when you want to make custom css changes in scrollbars without using `!important` in each line. 
+If you prefer including scrollbar without css styles boundled inline to js file it's possible to import package without them. It's useful when you want to make custom css changes in scrollbars without using `!important` in each line.
 
 ```js
     var ScrollArea = require('react-scrollbar/no-css');
@@ -99,10 +99,14 @@ then open [http://localhost:8003](http://localhost:8003).
         contentClassName={String}
         contentStyle={Object}
         horizontal={Boolean}
+        horizontalContainerClassName={String}
         horizontalContainerStyle={Object}
+        horizontalScrollbarClassName={String}
         horizontalScrollbarStyle={Object}
         vertical={Boolean}
+        verticalContainerClassName={String}
         verticalContainerStyle={Object}
+        verticalScrollbarClassName={String}
         verticalScrollbarStyle={Object}
         onScroll={(value) => {}}
         contentWindow={Object}
@@ -145,8 +149,14 @@ Inline styles applied to element with scroll area content.
 When set to false, horizontal scrollbar will not be available.
 **Default: true**
 
+#### horizontalContainerClassName
+CSS class names added to horizontal scrollbar's container.
+
 #### horizontalContainerStyle
 Inline styles applied to horizontal scrollbar's container.
+
+#### horizontalScrollbarClassName
+CSS class names added to horizontal scrollbar.
 
 #### horizontalScrollbarStyle
 Inline styles applied to horizontal scrollbar.
@@ -155,8 +165,14 @@ Inline styles applied to horizontal scrollbar.
 When set to false, vertical scrollbar will not be available, regardless of the content height.
 **Default: true**
 
+#### verticalContainerClassName
+CSS class names added to vertical scrollbar's container.
+
 #### verticalContainerStyle
 Inline styles applied to vertical scrollbar's container.
+
+#### verticalScrollbarClassName
+CSS class names added to vertical scrollbar.
 
 #### verticalScrollbarStyle
 Inline styles applied to vertical scrollbar.
@@ -170,7 +186,7 @@ You can override document to make scrollarea works inside iframe.
 **Default: document**
 
 #### smoothScrolling
-When set to true, smooth scrolling for both scrollbars is enabled. 
+When set to true, smooth scrolling for both scrollbars is enabled.
 **Default: false**
 
 #### minScrollSize
@@ -243,7 +259,7 @@ It allows to scroll to the right of `ScrollArea` component.
 It moves horizontal scrollbar. `leftPosition` is a distance between left edge of `scrollArea` container and left edge of `scrollArea` content.  
 
 # Change log
-Every release is documented on the Github [Releases](https://github.com/souhe/reactScrollbar/releases) page. 
+Every release is documented on the Github [Releases](https://github.com/souhe/reactScrollbar/releases) page.
 
 # License
 MIT
